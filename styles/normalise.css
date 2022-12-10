@@ -1,5 +1,19 @@
+html {
+    overflow-y: scroll;
+}
+
 body {
     margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+footer {
+    margin-top: 3px;
 }
 
 li {
@@ -44,59 +58,241 @@ ul {
     align-items: center;
 }
 
+.ai-str {
+    align-items: stretch;
+}
+
+
+/*** ХЭДЕР ***/
+.header-logo-main-menu img {
+    margin-right: 15px;
+}
+
+.header-container {
+    margin: 5px 15px 5px 15px;
+}
+
+.header-container--upper-left {
+    gap: 6px;
+}
+
+.header-input-img {
+    /*margin-right: 30px;*/
+}
+
+/*** ФУТЕР ***/
+.footer-container {
+    margin: 20px;
+}
+
+footer h1 {
+    margin-bottom: 15px;
+}
+
+.footer-item--points {
+    gap: 7px;
+}
+
+.footer-item--icons {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/*** ГЛАВНАЯ СТРАНИЦА ***/
+.main {
+
+}
+
+.main-container {
+    padding: 16px;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
+    grid-gap: 16px;
+}
+
+.main-item {
+    position: relative;
+}
+
+.main-item--img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-item--text{
+    position: absolute;
+    bottom: 0px;
+    right: 28px;
+}
+
+.main-item--text img{
+    position: absolute;
+    bottom: 15px;
+    right: -25px;
+}
+
 /*** КАТАЛОГ ***/
 .catalog-main {
     /*grid-template-rows: repeat(2, 1fr);*/
     grid-template-columns: 20% 80%;
 }
 
+.catalog-path {
+    gap: 4px;
+}
+
 .catalog-viewer {
+    margin: 16px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 16px;
 }
 
 .prod-card {
-    height: 400px;
+    /*height: 400px;*/
+}
+
+.prod-card--container {
+    margin: 6px 8px 16px 8px;
+    height: 70px;
+    position:relative;
+}
+
+.prod-card--name {
+
+}
+
+.prod-card--container-lower {
+    margin-top: 8px;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+}
+
+.prod-card--container-lower--price {
+    margin-left: 8px;
+    gap: 15px;
+}
+
+.prod-card--edit-btn--cont {
+
+}
+
+.fotorama {
+    margin-top: 8px;
 }
 
 .catalog-filters {
+    padding: 6px;
+}
+
+.catalog-filters--types {
+    margin-top: 4px;
+    gap: 2px;
+}
+
+.catalog-filters--custom {
+    margin-top: 8px;
+    gap: 4px;
+}
+
+.catalog-filters--bcg {
+    padding: 6px;
+}
+
+.catalog-filters--items-cont {
+    /*gap: 2px;*/
+}
+
+.catalog-filters--sticks-series {
 
 }
 
 .catalog-filters--sticks-rigid-items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .catalog-filters--sticks-length-items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.catalog-series ul {
-    max-height: 0;
-    transition: max-height 0.50s ease-out;
-    overflow: hidden;
-    background: #d5d5d5;
-}
-.catalog-series:hover ul {
-    max-height: 500px;
-    transition: max-height 0.50s ease-in;
-}
+/*.catalog-series ul {*/
+/*    max-height: 0;*/
+/*    transition: max-height 0.50s ease-out;*/
+/*    overflow: hidden;*/
+/*    background: #d5d5d5;*/
+/*}*/
+/*.catalog-series:hover ul {*/
+/*    max-height: 500px;*/
+/*    transition: max-height 0.50s ease-in;*/
+/*}*/
 
 /*** РЕДАКТОР КАРТОЧЕК ***/
+.prod-manage {
+    padding: 10px;
+}
+
+.prod-manage__top {
+    gap: 32px;
+}
+
+.prod-manage__top-title {
+    margin: auto;
+}
+
+.prod-manage__main {
+    gap: 8px;
+}
+
+.prod-manage__sub-main {
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 2px;
+}
+
+.prod-manage__fields-left,
+.prod-manage__fields-mid,
+.prod-manage__fields-right {
+    gap: 2px;
+}
+
+.prod-manage__field-rigid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.prod-manage__field-length {
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .p_images_common {
     max-width:100%;
     max-height:100%;
 }
 
+.p_images_common_cont {
+    height: 100%;
+}
+
+.p_image-item {
+    gap: 2px;
+}
+
 .images-container {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.prod-image-main {
+    gap: 2px;
+}
+
+.prod-image-and-title {
+    gap: 4px;
 }
 
 .galleria{
+    margin: 16px;
     /*width: 700px;*/
-    height: 400px;
-    max-width:100%;
+    background: white;
+    height: 300px;
+    /*max-width:100%;*/
     /*max-height:100%;*/
     /*background: #000;*/
 }
